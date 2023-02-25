@@ -1,0 +1,85 @@
+in editor
+
+
+write , run , go to command window and see result
+-------------------------------------------------------------------
+------------------------------------------------------
+a=10;
+b=10;
+if(a==b)
+  disp('a and b are equal')
+end
+
+## disp(a)                      ctrl r for comment, select portion and ctrl r
+
+
+------------------------------------------------
+a=-5;
+b=84
+
+if(a>b)
+   disp('a is greater')
+   a=a+5
+
+else % (b>a)
+   disp('B is greater')
+   b=5*8+b
+end
+---------------------------------------------------------------
+
+for loop
+ sum of First 5 natural Numbers
+sum=0
+for i=1:5
+   sum=sum+i;
+
+end
+##disp('sum')                            ' ' string output ,   no ' ' value output
+disp(sum)
+
+----------------------------------
+clc
+sum=0;
+a=zeroes(1,5);
+
+for i=1:5
+   sum=sum+i;
+a(i)=a(i)-58
+   
+end
+disp(sum)
+----------------------------------------------------------
+
+while loop
+clc   ## to clear command window
+a=100;
+while(a>=0)
+    disp(a)
+    a=a-15;
+end
+------------------------------------------------------------
+functions in matlab
+
+syms x             ##to define x as a variable
+f=@(x) x^2+1
+f(-100)
+
+g=(-100)^2+1
+
+if(f==g)
+   disp('Mam is right')
+else
+   disp('Mam is wrong')
+end
+-----------------------------------------------------------------
+multi variable function
+
+syms x y z               ## n0 , in bw
+
+g=@(x,y,z) x*y + 2*z^2
+
+g(1,2,3)
+
+-------------------------------------------------------------------------
+
+
